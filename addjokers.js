@@ -17,6 +17,12 @@ let jokers = [
 		image_url: 'img/squid.png',
 		rarity: 'Common',
 	},
+	{
+		name: 'Swiss Joker',
+		text: ['+5 Mult for each unscored card played in previous hand'],
+		image_url: 'img/cheese.png',
+		rarity: 'Common',
+	},
 	// {
 	// 	name: 'Lipstick',
 	// 	text: ['Bonus cards have 1 in 2 chance to give +4 Mult'],
@@ -36,14 +42,8 @@ let jokers = [
 		rarity: 'Uncommon',
 	},
 	{
-		name: 'Swiss Joker',
-		text: ['X0.5 Mult for each unscored card played this round'],
-		image_url: 'img/cheese.png',
-		rarity: 'Uncommon',
-	},
-	{
 		name: 'Royal Guard',
-		text: [''],
+		text: ['After you score 13 Kings or Queens, sell this to make a random Joker Negative'],
 		image_url: 'img/guard.png',
 		rarity: 'Uncommon',
 	},
@@ -54,9 +54,23 @@ let jokers = [
 		rarity: 'Uncommon',
 	},
 	{
-		name: 'Handy',
-		text: ['X2.5 Mult if a High Card was previously played this round'],
+		name: 'Handy Joker',
+		text: ['If first hand of round has exactly 1 card, X3 Mult for rest of round'],
 		image_url: 'img/sock.png',
+		rarity: 'Uncommon',
+	},
+	{
+		name: 'Cosmic Collapse',
+		text: [
+			'At end of round, held Planet cards have 1 in 3 chance to transform into a Black Hole',
+		],
+		image_url: 'img/collapse.png',
+		rarity: 'Uncommon',
+	},
+	{
+		name: 'Red Envelope',
+		text: ['At end of round, earn $8 if at least 3 8s were scored this round'],
+		image_url: 'img/redenvelope.png',
 		rarity: 'Uncommon',
 	},
 	{
@@ -74,7 +88,7 @@ let jokers = [
 	{
 		name: 'Joker Energy',
 		text: [
-			'Gains X0.25 Mult when a Wild card scores, resets if all scoring cards in hand have matching suit',
+			'Gains X0.25 Mult when a Wild card scores in a 5-card hand type, resets if hand contains a Flush',
 		],
 		image_url: 'img/energy.png',
 		rarity: 'Rare',
